@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Js</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <%= link_to 'ColoRed', home_path, { :onclick => "paint_it(this, '#990000')" } %>
+        <span>&nbsp</span>
+        <%= link_to 'page1', page1_path, { :onclick => "paint_it(this, '#990000')" } %>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <%= yield %>
+  </div>
+  
+  </body>
+</html>
