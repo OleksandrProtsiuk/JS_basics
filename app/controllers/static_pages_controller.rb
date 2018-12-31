@@ -7,6 +7,7 @@ class StaticPagesController < ApplicationController
   end
 
   def page2
+    @counter = cookies[:counter]
   end
 
   def page3

@@ -14,3 +14,4 @@
 @greet = (person) ->
   msg = 'Welcome ' + person + '!'
   alert msg
+
