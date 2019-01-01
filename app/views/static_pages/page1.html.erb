@@ -1,26 +1,11 @@
 
 <div class="container">
-  <div class="row">
-    <div class="form-inline">
-      <%= form_tag(page1_path(@data), method: 'get') do %>
-        <input class="form-control" onclick="paint_it(this, '#000000')" <%= text_field_tag :data %>
-        <span>&nbsp</span>
-        <%= submit_tag 'Press it', { :class => 'btn btn-outline-success'} %>
-      <% end %>
-    </div>
-  </div>
-  <div onclick="paint_it(this, '#000000', '#ffffff')">
-    <%= @data %>
-    <%= javascript_tag '' %>
-  </div>
-  <div>
-    <button id="#funbtn" class="btn btn-outline-success">Click me!</button>
-  </div>
+
+  <input type="range" min="0" max="1000" step="1" oninput="rang()" id="rng" class="form-control-range" value="0">
+  <p id="val"></p>
+  <input type="text" id="inp" class="form-control">
+  <p> </p>
+  <div id="grdv"></div>
 </div>
 
-<script>
-    $('#funbtn').on('click', function (){
-        alert('Fuck You !');
-    });
-
-</script>
+<script src="page1.js"></script>
