@@ -8,3 +8,18 @@
   width: 20px;
   background: green;
 };
+
+.menu-item {
+  border: 2px solid #B00100;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+};
+
+.menu-item .submenu {
+  height: 40px;
+  width: 120px;
+  background: darkorange;
+  position: absolute;
+  cursor: pointer;
+};
