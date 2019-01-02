@@ -12,4 +12,7 @@ class StaticPagesController < ApplicationController
 
   def page3
   end
+
+  def page4
+  end
 end

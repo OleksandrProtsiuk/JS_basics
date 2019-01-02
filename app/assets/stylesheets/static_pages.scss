@@ -1,20 +1,20 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap";
+// @import "bootstrap";
 
 #grdv {
   height: 20px;
   width: 20px;
   background: green;
-};
+}
 
 .menu-item {
   border: 2px solid #B00100;
   display: inline-block;
   position: relative;
   cursor: pointer;
-};
+}
 
 .menu-item .submenu {
   height: 40px;
@@ -22,4 +22,38 @@
   background: darkorange;
   position: absolute;
   cursor: pointer;
-};
+}
+
+
+#tabs .tab {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+#tabs .whiteborder{
+  border: 1px solid #B00100;
+  border-bottom: 1px solid #66CDAA;
+  border-radius: 3px 3px 0 0;
+}
+
+#tabs .tabContent{
+  width: 300px;
+  height: 500px;
+  border: 1px solid #B00100;
+  position: relative;
+  top: -1;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 0 0 3px 3px;
+}
+
+#tabs .hide{
+  display: none;
+}
+
+#tabs .show{
+  display: block;
+}
