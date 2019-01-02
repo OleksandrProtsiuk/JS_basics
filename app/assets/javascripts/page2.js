@@ -1,4 +1,4 @@
-document.getElementById('nav').onmouseover = function (event) {
+document.getElementById('nav').onmouseover = function(event) {
     let target = event.target;
     if (target.className === 'menu-item') {
         let s = target.getElementsByClassName('submenu');
